@@ -1,0 +1,18 @@
+{
+    "sourceFile": "App_Resources/Android/app.gradle",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1634808738968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1634808738968,
+            "name": "Commit-0",
+            "content": "// Add your native dependencies here:\n\n// Uncomment to add recyclerview-v7 dependency\n//dependencies {\n//\timplementation 'com.android.support:recyclerview-v7:+'\n//}\n\n// If you want to add something to be applied before applying plugins' include.gradle files\n// e.g. project.ext.googlePlayServicesVersion = \"15.0.1\"\n// create a file named before-plugins.gradle in the current directory and place it there\n\nandroid {\n  defaultConfig {\n    minSdkVersion 21\n    generatedDensities = []\n  }\n  aaptOptions {\n    additionalParameters \"--no-version-vectors\"\n  }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "e2e/firstTest.e2e.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1634808339267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1634808339267,
+            "name": "Commit-0",
+            "content": "describe('Example', () => {\n  beforeAll(async () => {\n    await device.launchApp();\n  });\n\n  beforeEach(async () => {\n    await device.reloadReactNative();\n  });\n\n  it('should have a label', async () => {\n    await expect(element(by.label('myLabel'))).toBeVisible();\n  });\n\n  it('should habe a button', async () => {\n    await element(by.id('myButton')).toBeVisible();\n  });\n\n  it('should show world screen after tap', async () => {\n    await element(by.id('world_button')).tap();\n    await expect(element(by.text('World!!!'))).toBeVisible();\n  });\n});\n"
+        }
+    ]
+}

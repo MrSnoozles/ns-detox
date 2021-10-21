@@ -5,11 +5,23 @@
   "private": true,
   "dependencies": {
     "@nativescript/core": "~8.1.1",
+    "@nativescript/detox": "^1.0.0",
     "@nativescript/theme": "~3.0.1",
     "nativescript-vue": "~2.9.0"
   },
   "devDependencies": {
+    "@nativescript/android": "8.1.1",
     "@nativescript/webpack": "~5.0.0",
+    "detox": "^18.23.0",
+    "jest": "^27.3.1",
+    "jest-circus": "^27.3.1",
+    "jest-cli": "^27.3.1",
     "nativescript-vue-template-compiler": "~2.9.0"
+  },
+  "scripts": {
+    "e2e:android:build": "detox build -c android",
+    "e2e:android:test": "detox test -c android && ./node_modules/.bin/enable-animations",
+    "e2e:ios:build": "detox build -c ios",
+    "e2e:ios:test": "detox test -c ios"
   }
 }

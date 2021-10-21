@@ -1,0 +1,18 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1634808237394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1634808237394,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"ns-detox\",\n  \"main\": \"app/app.js\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@nativescript/core\": \"~8.1.1\",\n    \"@nativescript/detox\": \"^1.0.0\",\n    \"@nativescript/theme\": \"~3.0.1\",\n    \"nativescript-vue\": \"~2.9.0\"\n  },\n  \"devDependencies\": {\n    \"@nativescript/android\": \"8.1.1\",\n    \"@nativescript/webpack\": \"~5.0.0\",\n    \"detox\": \"^18.23.0\",\n    \"jest\": \"^27.3.1\",\n    \"jest-circus\": \"^27.3.1\",\n    \"jest-cli\": \"^27.3.1\",\n    \"nativescript-vue-template-compiler\": \"~2.9.0\"\n  },\n  \"scripts\": {\n\t\t\"e2e:android:build\": \"detox build -c android\",\n\t\t\"e2e:android:test\": \"detox test -c android && ./node_modules/.bin/enable-animations\",\n\t\t\"e2e:ios:build\": \"detox build -c ios\",\n\t\t\"e2e:ios:test\": \"detox test -c ios\"\n\t}\n}\n"
+        }
+    ]
+}

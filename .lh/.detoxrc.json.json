@@ -1,0 +1,22 @@
+{
+    "sourceFile": ".detoxrc.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1634808203497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634808494039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     },\n     \"emulator\": {\n       \"type\": \"android.emulator\",\n       \"device\": {\n-        \"avdName\": \"Pixel_3a_API_30_x86\"\n+        \"avdName\": \"Pixel_3a_API_24\"\n       }\n     }\n   },\n   \"configurations\": {\n"
+                }
+            ],
+            "date": 1634808203497,
+            "name": "Commit-0",
+            "content": "{\n  \"testRunner\": \"jest\",\n  \"runnerConfig\": \"e2e/config.json\",\n  \"skipLegacyWorkersInjection\": true,\n  \"apps\": {\n    \"ios\": {\n      \"type\": \"ios.app\",\n      \"binaryPath\": \"platforms/ios/build/Debug-iphonesimulator/ns-detox.app\",\n      \"build\": \"ns build ios\"\n    },\n    \"android\": {\n      \"type\": \"android.apk\",\n      \"binaryPath\": \"platforms/android/app/build/outputs/apk/debug/app-debug.apk\",\n      \"build\": \"ns build android --detox\"\n    }\n  },\n  \"devices\": {\n    \"simulator\": {\n      \"type\": \"ios.simulator\",\n      \"device\": {\n        \"type\": \"iPhone 11\"\n      }\n    },\n    \"emulator\": {\n      \"type\": \"android.emulator\",\n      \"device\": {\n        \"avdName\": \"Pixel_3a_API_30_x86\"\n      }\n    }\n  },\n  \"configurations\": {\n    \"ios\": {\n      \"device\": \"simulator\",\n      \"app\": \"ios\"\n    },\n    \"android\": {\n      \"device\": \"emulator\",\n      \"app\": \"android\"\n    }\n  }\n}"
+        }
+    ]
+}
